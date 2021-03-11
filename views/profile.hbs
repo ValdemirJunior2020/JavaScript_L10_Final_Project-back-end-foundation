@@ -1,0 +1,49 @@
+<nav>
+    <a href="/users/">Home</a>
+    <a href="/users/create/">Create Post</a>
+    <a href="/users/logout/">Logout</a>
+
+     {{#if accessUser}}
+
+    <a href="/users/admin/">View Users</a>
+    <a href="/users/posts/">Posts</a>
+    {{/if}}
+
+</nav>
+
+<div>
+    <h2>Welcome {{FirstName}} {{LastName}}</h2>
+    <!--<h2>Email: {{Email}}</h2>-->
+    <h2><!--UserId: {{UserId}}--> Username: {{Username}}</h2>
+    <!--<h2>User Status: {{Status}}</h2>-->
+</div>
+
+<hr>
+
+    <h1>My Posts</h1>
+{{#each posts}}
+<h2>Title: {{PostTitle}}</h2>
+<p>Details: {{PostBody}}</p>
+
+<div>
+    <form class="form" method="POST" action="/users/edit/{{PostId}}">
+        <div>
+            <label for="name">Title:</label>
+            <input type="text" name="PostTitle" required>
+        </div>
+        <div>
+            <label for="name">Details:</label>
+            <textarea type="text" name="PostBody" required></textarea>
+        </div><br>
+        <div>
+            <button type="submit" method="POST" action="/users/edit/{{PostId}}">Edit </button>
+        </div>
+    </form>
+    <div class="delete">
+        <form class="form" method="POST" action="/users/posts/{{PostId}}">
+            <button type="submit">Delete</button>
+        </form>
+    </div><br>
+</div>
+<hr>
+{{/each}}

@@ -1,0 +1,21 @@
+<nav>
+      <a href="/users/">Home</a>
+      <a href="/users/signup/">Sign Up</a>
+      <a href="/users/logout/">Logout</a>
+</nav>
+
+<h1>Welcome! Please log in to continue.</h1>
+{{message}}
+<form class="form" id="login" name="login" method="POST" action="/users/login">
+<div>
+      <label for="name">Username:</label>
+      <input type="text" name="username" required>
+</div>
+<div>
+      <label for="name">Password:</label>
+      <input type="text" name="password" required>
+</div>
+<div>
+      <button type="submit">Login</button>
+</div>
+</form>

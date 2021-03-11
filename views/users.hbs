@@ -1,0 +1,31 @@
+<nav>
+
+      <a href="/users">Home</a>
+      <a href="/users/create">Create Post</a>
+      <a href="/users/posts">Back</a>
+      <a href="/users/logout">Logout</a>
+
+</nav>      
+
+      <h1 style="text-align: center;">Users in the database</h1>
+
+
+      <table>
+      <tr>
+            <th>View</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Remove </th>
+      </tr>
+      {{#each users}}
+      <tr>
+            <td> <a href='/users/admin/editUser/{{UserId}}'>View</a></td>
+            <td>{{FirstName}}</td>
+            <td>{{LastName}}</td>
+            <td><form class="table"  method="POST" action="/users/{{UserId}}">
+    <button class="btn" type="submit">Delete</button>
+</form></td>
+      </tr>
+      {{/each}}
+</table>
+

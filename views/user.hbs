@@ -1,0 +1,16 @@
+<nav>
+
+    <a href="/users/admin/">Home</a>
+      <a href="/users/create/">Create Post</a>
+      <a href="/users/posts/">Posts</a>
+      <a href="/users/logout/">Logout</a>
+
+</nav>
+
+<h1>User: {{FirstName}} {{LastName}}</h1>
+<h2>Email: {{Email}}</h2>
+<h3>Username: {{Username}}  Status: {{Status}}</h3>
+<h3></h3>
+
+<form class="form"  method="POST" action="/users/{{UserId}}">
+    <button type="submit">Delete</button>

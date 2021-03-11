@@ -1,0 +1,38 @@
+<nav>
+    <a href="/users/">Home</a>
+    <a href="/users/profile/">Back</a>
+    <a href="/users/create/">Create Post</a>
+    <a href="/users/logout/">Logout</a>
+
+     {{#if accessUser}}
+    <a href="/users/admin/">View Users</a>
+    {{/if}}
+</nav>
+
+
+
+<div>
+      <h2>Welcome {{user.FirstName}} {{user.LastName}}</h2>
+     <!-- <h2>Email: {{user.Email}}</h2>-->
+      <h2><!--UserId: {{user.UserId}}--> Username: {{user.Username}}</h2>
+      <!--<h2>User Status: {{status}}</h2>-->
+
+      {{#if accessUser}}
+
+<nav>
+            <a href="/users/admin/">View Users</a>
+</nav>
+      
+      {{/if}}
+</div>
+<hr>
+{{#each users_posts}}
+<h1>Post By: {{Username}}</h1>
+{{#each posts}}
+
+<h2>Title: {{PostTitle}}</h2>
+<h3>Details: {{PostBody}}</h3>
+{{/each}}
+<hr>
+
+{{/each}}

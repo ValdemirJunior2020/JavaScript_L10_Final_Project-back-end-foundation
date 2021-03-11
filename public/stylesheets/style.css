@@ -1,0 +1,119 @@
+body {
+  background-color: honeydew;
+}
+table {
+  margin-left: 435px;
+}
+h1, h2, h3, p {
+  text-align: center;
+  font-weight: bold;
+  margin-left: 360px;
+  width: 600px;
+  padding: 0 0 0 0;
+}
+h1 {
+  color: darkblue;
+}
+h2 {
+  color: black;
+}
+nav a {
+  padding: 7.5px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: lightgrey;
+  border: 2.5px outset darkslategrey;
+  border-radius: 8px;
+}
+nav a:visited, a:link {
+  color: #334953;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+nav a.active {
+  color: #039be5;
+}
+nav {
+  text-align: center;
+}
+.form {
+  background-color: lightskyblue;
+  margin: 5px 10px 1px 505px;
+  text-align: center;
+  border: 2.5px inset darkslateblue;
+  border-radius: 12.5px;
+  width: 25%;
+}
+input {
+  width: 70%;
+  margin: 7px 5px 0 15px;
+  border: 1.5px inset darkslateblue;
+  border-radius: 4px;
+  line-height: 2em;
+}
+textarea {
+  margin: 7px 12px 0 10px;
+  border: 1.5px inset darkslateblue;
+  border-radius: 4px;
+  width: 70%;
+  line-height: 2em;
+}
+label {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+button {
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin: 5px 0 5px 155px;
+  border: 2.5px inset darkslategrey;
+  border-radius: 8px;
+  cursor: pointer;
+}
+p {
+  margin-left: 470px;
+  font-size: 21px;
+  width: 400px;
+}
+#signup {
+  margin: 0 5px 0 445px;
+  width: 35%;
+}
+.table{
+  font-size: 21px;
+  text-align: center;
+}
+table {
+  font-size: 21px;
+  text-align: center;
+}
+.btn {
+  padding: 5px 10px;
+  margin: 0;
+}
+th {
+  background-color: none;
+}
+th, 
+td {
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+}
+hr {
+margin-top: 25px;
+height: 4px;
+width: 100%;
+border-width: 0;
+color: black;
+background-color: black;
+}

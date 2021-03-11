@@ -1,0 +1,21 @@
+<nav>
+      <a href="/users/">Home</a>
+      <a href="/users/posts/">Posts</a>
+      <a href="/users/logout/">Logout</a>
+</nav>
+
+<h2>Add A New Post</h2>
+<form class="form" id="create" name="create" method="POST" action="/users/create">
+<div>
+      <label for="name">Title:</label>
+      <input type="text" name="PostTitle" required>
+</div>
+<div>
+      <label for="name">Details:</label>
+<textarea type="text" name="PostBody" required></textarea>
+</div>
+<br>
+<div>
+      <button type="submit">Submit</button>
+</div>
+</form>
